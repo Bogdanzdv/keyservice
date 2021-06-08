@@ -907,7 +907,7 @@ body.ie .ibg img {
 	margin-bottom: 5px;
 }
 .info-contacts .phone {
-	background: url("/img/icons/phone.png") 0 no-repeat;
+	background: url("../img/icons/phone.png") 0 no-repeat;
 	padding-left: 25px;
 	text-decoration: none;
 	color: rgba(34, 34, 34, 0.95);
@@ -915,7 +915,7 @@ body.ie .ibg img {
 	font-size: 18px;
 }
 .info-contacts .mail {
-	background: url("/img/icons/email.png") 0 no-repeat;
+	background: url("../img/icons/email.png") 0 no-repeat;
 	padding-left: 25px;
 	text-decoration: none;
 	color: rgba(34, 34, 34, 0.95);
@@ -940,7 +940,7 @@ body.ie .ibg img {
 	margin-bottom: 6.5px;
 }
 .adress .adress-city {
-	background: url("/img/icons/place.png") 0 no-repeat;
+	background: url("../img/icons/place.png") 0 no-repeat;
 	font-size: 16px;
 	font-weight: 500;
 }
