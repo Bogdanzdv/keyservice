@@ -108,6 +108,10 @@ body.lock {
 	overflow: hidden;
 }
 
+body._lock {
+	overflow: hidden;
+}
+
 .wrapper {
 	width: 100%;
 	min-height: 100%;
@@ -885,6 +889,12 @@ body.ie .ibg img {
 	.logo__info h2 {
 		font-size: 11px;
 		line-height: 13px;
+		padding: 3px 0;
+	}
+}
+@media (max-width: 360px) {
+	.logo__info h2 {
+		display: none;
 	}
 }
 .logo__info img {
@@ -970,7 +980,7 @@ body.ie .ibg img {
 }
 @media (max-width: 600.98px) {
 	.line {
-		margin: 0 5px;
+		margin: 0 18px;
 		height: 50px;
 	}
 }
@@ -1001,7 +1011,7 @@ body.ie .ibg img {
 	}
 }
 
-nav {
+.navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1081,29 +1091,104 @@ nav {
 	font-weight: 400;
 }
 
-/*
-	Стиль иконки бургера
-	.icon-menu{
-		display: block;
-		position: absolute;
-		top: 18px;
-		right: 10px;
-		width:30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
-			&:first-child{top: 0px;}
-			&:last-child{top: auto;bottom: 0px;}
-		}
-		&.active{
-			span{@include scale(0);
-				&:first-child{@include rotate(-45deg);top: 8px;}
-				&:last-child{@include rotate(45deg);bottom: 8px;}
-			}
-		}
-	}
-*/
+.icon-menu {
+	display: block;
+	position: absolute;
+	top: 86px;
+	right: 30px;
+	width: 30px;
+	height: 18px;
+	cursor: pointer;
+	z-index: 5;
+}
+.icon-menu span {
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	top: 8px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+}
+.icon-menu span:first-child {
+	top: 0px;
+}
+.icon-menu span:last-child {
+	top: auto;
+	bottom: 0px;
+}
+.icon-menu.active {
+	background: none;
+}
+.icon-menu.active span {
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+.icon-menu.active span:first-child {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 8px;
+}
+.icon-menu.active span:last-child {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: 8px;
+}
+
+.menu__body {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	padding: 100px 30px 30px 30px;
+	-webkit-transition: left 0.3s ease 0s;
+	-o-transition: left 0.3s ease 0s;
+	transition: left 0.3s ease 0s;
+	overflow: auto;
+	z-index: 1;
+}
+.menu__body a {
+	color: #fff;
+}
+.menu__body ::before {
+	content: "";
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 70px;
+	z-index: 2;
+}
+
+.menu__body.active {
+	left: 0;
+	background-color: #2b4886e8;
+}
+
+.menu__list > li {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin: 0px 0px 30px 0px;
+}
+
+.menu__link > li:last-child {
+	margin-bottom: 0px;
+}
+
+.menu__list > li._active {
+	display: block;
+}
+
+.menu__link {
+	font-size: 24px;
+}
+
 .main-page {
 	padding: 25px 0;
 }
