@@ -71,21 +71,23 @@
 	</div>
 </header>		<!-- Slideshow container -->
 		<main class="main-page">
-			<div class="container">
-				<div class="mySlides fade">
-					<img src="img/content/keys1.jpg" style="width:100%">
-				</div>
+			<div class="main__slide">
+				<div class="container">
+					<div class="mySlides fade">
+						<img src="img/content/keys1.jpg" style="width:100%">
+					</div>
 
-				<div class="mySlides fade">
-					<img src="img/content/keys2.jpeg" style="width:100%">
-				</div>
+					<div class="mySlides fade">
+						<img src="img/content/keys2.jpeg" style="width:100%">
+					</div>
 
-				<div class="mySlides fade">
-					<img src="img/content/keys3.jpg" style="width:100%">
+					<div class="mySlides fade">
+						<img src="img/content/keys3.jpg" style="width:100%">
+					</div>
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 			<br>
 			<!-- The dots/circles -->
@@ -122,20 +124,63 @@
 								<p>Современный цех <br> размером 500 м²</p>
 							</div>
 						</div>
-						<!-- <div class="advantages__column">
-							<div class="advantages-column__image"><img src="img/content/factory.png" alt=""></div>
-							<h3>Собственное производство</h3>
-							<p>Современный цех <br> размером 500 м²</p>
-						</div>
-						<div class="advantages__column">
-							<div class="advantages-column__image"><img src="img/content/factory.png" alt=""></div>
-							<h3>Собственное производство</h3>
-							<p>Современный цех <br> размером 500 м²</p> -->
 					</div>
 				</div>
 			</div>
+			<div class="select-category">
+				<div class="container">
+					<div class="block-category">
+						<div class="category__row">
+							<div class="category__column">
+								<a href="#">
+									<div class="category__item">
+										<div class="item__body">
+											<div class="item__text">Двери</div>
+											<!-- <div class="item__btn">Перейти в каталог</div> -->
+										</div>
+
+									</div>
+								</a>
+							</div>
+							<div class="category__column">
+								<a href="#">
+									<div class="category__item">
+										<div class="item__body">
+											<div class="item__text">Замки</div>
+											<!-- <div class="item__btn">Перейти в каталог</div> -->
+										</div>
+
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="category-service__column">
+							<div class="category__service">
+								<div class="item__body">
+									<div class="item__text">Сервис</div>
+									<!-- <div class="item__btn">Вызвать специалиста</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="category-usebility">
+							<a href="#" class="btn">Перейти в каталог</a>
+							<a href="#" class="btn__text">или <br> связаться с специалистом</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="asks">
+				<div class="container">
+					<div class="asks__content">
+						<div class="asks__text">
+							<div class="asks__title">Вопрос ответ</div>
+							<div class="asks__suptitle">Часто задаваемые вопросы</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</div>
-	</main>
 <footer class="footer">
 	<div class='container'>
 		<div class="footer__row">
@@ -179,7 +224,6 @@
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
 <script src="js/vendors.js"></script>
 <script src="js/main.js"></script>
-<script src="js/custom.js" ></script>
-</body>
+<script src="js/custom.js"></script></body>
 
 </html>
