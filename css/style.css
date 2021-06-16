@@ -1461,7 +1461,7 @@ body.ie .ibg img {
 
 .category__item {
 	text-align: center;
-	background: url("../img/content/door1.jpg") no-repeat;
+	background-image: url("../img/content/door1.jpg");
 	overflow: hidden;
 	height: 400px;
 	position: relative;
