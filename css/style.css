@@ -1461,7 +1461,7 @@ body.ie .ibg img {
 
 .category__item {
 	text-align: center;
-	background-image: url("/img/content/door1.jpg");
+	background-image: url("img/content/door1.jpg");
 	overflow: hidden;
 	height: 400px;
 	position: relative;
@@ -1536,7 +1536,7 @@ body.ie .ibg img {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	text-align: center;
-	background: url(/img/content/service.jpg) no-repeat;
+	background: url(img/content/service.jpg) no-repeat;
 	height: 400px;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
